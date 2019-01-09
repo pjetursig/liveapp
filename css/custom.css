@@ -1,0 +1,9 @@
+.cust_sideheader{
+    background-color:#eeeeee
+}
+.cust_sideheader_img{
+    height:100px
+}
+.cust_rounded_img {
+    border-radius: 50%;
+  }
