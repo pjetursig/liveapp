@@ -18,3 +18,13 @@
 
     color : red darken-1
  }
+ table {
+display: block; 
+overflow-x: auto;
+margin-left: 10px;}
+ /* Extra CSS, just styling the look: */
+ table {
+border-collapse: collapse;
+}
+ table td,th {
+padding: 10px; border: 1px #000 solid;}
