@@ -1,0 +1,20 @@
+.cust_sideheader{
+    background-color:#eeeeee
+}
+.cust_sideheader_img{
+    height:100px
+}
+.cust_header_img{
+    height:40px;
+  margin-left: 90px;
+  margin-top: 5px;
+  
+}
+.cust_rounded_img {
+    border-radius: 50%;
+  }
+
+ i.icon_color{
+
+    color : red darken-1
+ }
