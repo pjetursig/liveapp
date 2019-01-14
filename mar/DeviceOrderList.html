@@ -10,6 +10,19 @@
     <link type="text/css" rel="stylesheet" href="css/custom.css"  rel="stylesheet"/>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        
+   
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel = "stylesheet"
+         href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   </head>
 
   <body>
@@ -41,11 +54,74 @@
               <li><a href="page3.html"> <i class="material-icons">people</i>Customer Confirmation</a></li>
               <li><a href="page4.html"> <i class="material-icons">computer</i>Order Info</a></li>
             </ul>
- Welcome 
+  
          <br>
+        
+         Choose the car from the list below:
+
+         
+  <!-- Dropdown Structure -->
+  <ul id = "dropdown" class = "dropdown-content">
+      <li><a href = "#">Inbox</a></li>
+     
+      <li><a href = "#">Outbox</a></li>
+   </ul>
+   
+   <a class = "btn dropdown-button" href = "#" data-activates = "dropdown">Choose Available Car
+      <i class = "mdi-navigation-arrow-drop-down right"></i></a>	
+
+
+      <script type="text/javascript">
+       document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  });
+  var instance = M.Dropdown.getInstance(elem);
+
+    </script>
+
+
+  <script>
+  
+  var selectedValue = document.getElementById("dropdown1").value;
+  document.getElementById("newText").value = selectedValue;
+
+  </script>
+         
+         <input type="text" id="newText" value="">
+
+         <ul id="items"></ul>
+         
+ 
+        
+         <input type="button" value="Add New Text" onclick="addItem()">
+          
+         <script>
+             function addItem() {
+                 let input = document.getElementById("newText");
+                 let text = input.value;
+                 let newLi = document.createElement("li");
+                 newLi.textContent = text + " ";
+                 let deleteLink = document.createElement("a");
+                 deleteLink.textContent = "[Delete]";
+                 deleteLink.href = "#";
+                 deleteLink.addEventListener("click", deleteItem);
+                 newLi.appendChild(deleteLink);
+          
+                 document.getElementById("items").appendChild(newLi);
+                 input.value = "";
+          
+                 function deleteItem() {
+                     document.getElementById("items").removeChild(newLi);
+                 }
+             }
+         </script>
+        
         
         </br>
 
+
+       
 
     <!--JavaScript at end of body for optimized loading-->
     
