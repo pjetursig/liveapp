@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  rel="stylesheet"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+        <nav>
+                <div class="nav-wrapper grey">
+                  <a href="#!" class="brand-logo center">  
+                  </a>
+                  <img class="cust_header_img" src="images/annatalogo.png" /> 
+                      
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="devicedescription.html">DeviceDescription</a></li>
+                    <li><a href="page2.html">Order Info</a></li> 
+                   
+                  </ul>
+                </div>
+              </nav>
+              
+              <ul class="sidenav" id="mobile-demo">
+                <li>
+                    <div class="cust_sideheader">
+                      <img class="cust_sideheader_img" src="images/logo2.png"/>
+                    </div>
+                </li>
+                <li><a href="index.html"> <i class="material-icons red-text text-lighten-2">home</i>Home</a></li>
+                <li><a href="devicedescription.html"> <i class="material-icons red-text text-lighten-2">directions_car</i>Device Description</a></li>
+                <li><a href="page2.html"> <i class="material-icons red-text text-lighten-2">create</i>Create Purchase Order</a></li>
+                <li><a href="page4.html"> <i class="material-icons red-text text-lighten-2">computer</i>Order Info</a></li>
+            </ul>
+            <button onclick="listView()"><i class="fa fa-bars"></i> List of Car details</button>
+            <div class="row">
+                <div class="column" style="background-color:#aaa;">
+                  <ul>
+                    <li><a href="cardetails.html">
+                        <h2>Car1</h2>
+                        <p>Details</p>
+                    </a></li>
+                  </ul>
+                </div>
+                <div class="column" style="background-color:#bbb;">
+                    <ul>
+                        <li><a href="cardetails.html">
+                            <h2>Car2</h2>
+                            <p>Details</p>
+                        </a></li>
+                      </ul>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="column" style="background-color:#ccc;">
+                    <ul>
+                        <li><a href="cardetails.html">
+                            <h2>Car3</h2>
+                            <p>Details</p>
+                        </a></li>
+                      </ul>
+                </div>
+                <div class="column" style="background-color:#ddd;">
+                    <ul>
+                        <li><a href="cardetails.html">
+                            <h2>Car4</h2>
+                            <p>Details</p>
+                        </a></li>
+                      </ul>
+                </div>
+              </div>
+           
+
+    <!--JavaScript at end of body for optimized loading-->
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+     // Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+      </script>
+
+</body>
+</html>
