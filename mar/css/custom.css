@@ -30,7 +30,15 @@
 
 .cust_nextbtn{
 
- margin-right: 40px;
+ margin-bottom: 50px;
+ margin-right: 40 px;
+ 
+}
+
+.cust_submitbtn{
+
+  margin-bottom: 50px;
+  margin-right: 40 px;
 
 }
 
