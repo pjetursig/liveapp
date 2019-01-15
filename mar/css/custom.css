@@ -14,3 +14,24 @@
 .cust_rounded_img {
     border-radius: 50%;
   }
+
+.cust_page_header{
+    
+    font-size: 20px;
+
+  }
+
+.cust_page_btnadd{
+
+    position: fixed;
+    bottom: 10px;
+    right: 2px; 
+  }
+
+.cust_nextbtn{
+
+ margin-right: 40px;
+
+}
+
+
